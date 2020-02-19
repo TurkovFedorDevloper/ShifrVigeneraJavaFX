@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0"
+            prefWidth="364.0" style="-fx-background-color: #008b8b;" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane layoutY="53.0" prefHeight="348.0" prefWidth="364.0" style="-fx-background-color: #90ee90;">
+            <children>
+                <AnchorPane layoutX="9.0" layoutY="9.0" prefHeight="332.0" prefWidth="347.0"
+                            style="-fx-background-color: #b0e0e6; -fx-background-radius: 10;">
+                    <children>
+                        <TextField fx:id="massField" layoutX="13.0" layoutY="14.0" prefHeight="25.0" prefWidth="321.0"
+                                   promptText="Введите сообщение"
+                                   style="-fx-background-radius: 10; -fx-border-radius: 10;"/>
+                        <PasswordField fx:id="keyField" layoutX="128.0" layoutY="52.0" prefHeight="25.0"
+                                       prefWidth="92.0" promptText="Введите ключ"
+                                       style="-fx-background-radius: 10; -fx-border-radius: 10;"/>
+                        <Button fx:id="cryptButton" layoutX="37.0" layoutY="88.0" mnemonicParsing="false"
+                                style="-fx-background-color: ffa500; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: ff6347;"
+                                text="Зашифровать"/>
+                        <Button fx:id="deCryptButton" layoutX="220.0" layoutY="88.0" mnemonicParsing="false"
+                                style="-fx-background-color: ffa500; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: ff6347;"
+                                text="Разшифровать"/>
+                        <Button fx:id="deleteButton" layoutX="139.0" layoutY="293.0" mnemonicParsing="false"
+                                style="-fx-background-color: ff0000; -fx-border-color: #8b0000; -fx-background-radius: 7; -fx-border-radius: 7;"
+                                text="Очистить" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Button>
+                        <TextField fx:id="exitMassField" layoutX="13.0" layoutY="166.0" prefHeight="51.0"
+                                   prefWidth="321.0" promptText="Зашифрованное/Разшифрованное сообщение"
+                                   style="-fx-background-radius: 10; -fx-border-radius: 10;"/>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="12.0" layoutY="8.0" prefHeight="38.0" prefWidth="340.0"
+                    style="-fx-background-color: #87ceeb; -fx-background-radius: 10;">
+            <children>
+                <Text fill="INDIGO" layoutX="98.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="SHIFR VIGENERA">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0"/>
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
